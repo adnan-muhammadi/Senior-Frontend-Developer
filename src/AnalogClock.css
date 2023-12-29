@@ -1,0 +1,52 @@
+/* AnalogClock.css */
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 6px solid #333;
+    border-radius: 50%;
+  }
+  
+  .hand {
+    position: absolute;
+    background-color: #333;
+    transform-origin: 50% 100%;
+    transform: translateX(-50%);
+    transition: transform 0.5s cubic-bezier(0.4, 2.5, 0.36, 0.8); /* Smooth transition for the hands */
+  }
+  
+  .hour {
+    height: 40px;
+    width: 6px;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -100%) rotate(90deg); /* Correcting the initial rotation */
+  }
+  
+  .minute {
+    height: 60px;
+    width: 4px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -100%) rotate(90deg); /* Correcting the initial rotation */
+  }
+  
+  .second {
+    height: 70px;
+    width: 2px;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -100%) rotate(90deg); /* Correcting the initial rotation */
+  }
+  
+  .center {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
